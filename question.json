@@ -1,9 +1,26 @@
 {
     "1":{
-        "question":"Who Are You?",
+        "question":"indeed",
         "answer":[
-            "Idontk",
-            "maybe"
+            "实在"
+        ]
+    },
+    "2":{
+        "question":"artifice",
+        "answer":[
+            "诡计"
+        ]
+    },
+    "3":{
+        "question":"dismantle",
+        "answer":[
+            "拆开"
+        ]
+    },
+    "4":{
+        "question":"separately",
+        "answer":[
+            "分别"
         ]
     }
 }
