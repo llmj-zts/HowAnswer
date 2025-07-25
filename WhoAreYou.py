@@ -3,8 +3,7 @@ import json
 import os
 os.system("chcp 65001")
 def rand(quest):
-    id = random.randint(1, len(quest))
-    return quest[repr(id)]
+    return random.sample(quest, len(quest))
 
 def judge(problem):
     answer = input("Q: "+problem["question"]+"\n")
@@ -12,10 +11,10 @@ def judge(problem):
         print("\033[32mCorrect!!!\033[0m")
         return True
     print("\033[31mMistake!!!\033[0m")
+    print("\033[33mcorrect answer:\033[32m%s\033[0m" %"or".join(problem["answer"]))
     return False
 
 def result(correct, all):
-    os.system("cls")
     print("Congrats!You complete all question")
     print("\033[32mCorrect:\033[0m %d" % correct)
     print("\033[31mMistake:\033[0m %d" % (all-correct))
@@ -25,9 +24,9 @@ def main(correct=0):
     file = open("question.json", 'rb')
     quest = json.load(file)
     file.close()
-    for i in quest:
-        problem = rand(quest)
-        if judge(problem):
+    problem = rand(quest)
+    for i in problem:
+        if judge(i):
             correct += 1
         input("Enter to continue...")
     result(correct, len(quest))
