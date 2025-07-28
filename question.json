@@ -22,5 +22,29 @@
         "answer":[
             "分别"
         ]
+    },
+    {
+        "question":"eccentrics",
+        "answer":[
+            "古怪"
+        ]
+    },
+    {
+        "question":"entertain",
+        "answer":[
+            "愉悦"
+        ]
+    },
+    {
+        "question":"authority",
+        "answer":[
+            "权威"
+        ]
+    },
+    {
+        "question":"volition",
+        "answer":[
+            "意志"
+        ]
     }
 ]
